@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick's HTML & CSS Lab</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
+        <div class="div1">
             <div>
                 <img class="blackHeart" src="images\black-heart.png" alt="a black heart">
                 <span>Nifty Penguin Magic </span>
@@ -24,33 +25,35 @@
             </nav>
         </div>
 
-        <div>
-            <img src="images\npm-logo.png" alt="npm logo">
+        <div class="div2">
+            <img class="logo" src="images\npm-logo.png" alt="npm logo">
             
-            <form action="search">
-                <img src="images\magnifying-glass.png" alt="lupa">
-                <input type="text" placeholder="Search packages">
+            <form class="searchbar"action="search">
+                <label for="form">
+                <img class="lupa" src="images\magnifying-glass.png" alt="lupa">
+                <input class="input" type="text" placeholder="Search packages">
                 <button type="submit">Search</button>
+            </label>
             </form>
-            <a href="#">Join</a>
+            <a class="button" href="#">Join</a>
             <a href="#">Log In</a>
         </div>
     </header>
-    <section id="see-plans">
-        <h2>Build amazing things</h2>
+    <section id="section1">
+        <h1>Build amazing things</h1>
         <article>Essential JavaScript development tools that help you go to market faster and buils powerful applications using modern open source code.</article>
-        <div>
-            <a href="#">See plans</a>
-            <a href="#">Join for free</a>
+        <div class="linkcontainer">
+            <a class="seeplans" href="#">See plans</a>
+            <a class="join" href="#">Join for free</a>
         </div>
     </section>
-    <section id="bring-best">
-        <img src="images\triangle-hexagon.svg" alt="trianglexagon">
+    <section id="section2">
+        <img class="hexatriangle" src="images\triangle-hexagon.svg" alt="trianglexagon">
         <h3>Bring the best of open source to your company</h3>
         <article>npm is the tool used by over 11.000.000 JavaScript developers around the worl. Your developers already use it. Your company depends on it. Create an Org and get more out of the tools your team already knows and loves.</article>
 
     </section>
-    <section id="create-org">
+    <section id="section3">
         <div>
             <img src="images\zero-configuration.svg" alt="zero configuration">
             <h4>Zero configuration</h4>
@@ -71,8 +74,9 @@
             <h4>npm audit</h4>
             <article>Enjoy the security auditing features built into the nom client, a zero-friction way to make open source software safer.</article>
         </div>
-        <a href="#">Create an Org</a>
     </section>
+        <a class="createorg" href="#">Create an Org</a>
+    
     
 
     
